@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  font-family: "Rubik", Helvetica, sans-serif;
+}
+
+#content_placeholder {
+  position: relative;
+  margin-left: 10%;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+
+  min-height: 500px;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+   url("./fonts/Rubik/Rubik-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+   url("./fonts/Rubik/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
