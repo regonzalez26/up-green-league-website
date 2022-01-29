@@ -7,6 +7,7 @@
   width: 100%;
 
   text-align: left;
+  border-radius: 10px;
 }
 
 
@@ -37,13 +38,19 @@
 }
 
 #article_card_type {
-  margin: 10px 0px 10px 0px;
+  margin: 5px 0px 0px 0px;
   color: gray;
+  font-size: small;
 }
 
 #article_card_title {
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
+}
+
+#article_card_description {
+  text-align: justify;
+  font-size: 12px;
 }
 
 #article_card_btn_read_more {
@@ -57,14 +64,24 @@
   align-items: center;
   min-width: 90px;
   max-width: 90px;
-  min-height: 25px;
-  max-height: 25px;
+  min-height: 20px;
+  max-height: 20px;
 
   background-color: #27aae1;
-  font-size: small;
+  font-size: 12px;
   color: white;
 
   border-radius: 12.5px;
   outline: none;
   border: none;
+}
+
+#article_card a {
+  text-decoration: none;
+}
+
+#article_card_btn_read_more:hover {
+  background-color: #0C6F0C;
+  color: white;
+  cursor: pointer;
 }

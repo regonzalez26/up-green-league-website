@@ -1,14 +1,16 @@
-#navtab_container {
-  position: relative;
+#navtab_mini_container {
+  position: fixed;
   top: 0px;
-  margin: auto;
+  padding: 10px 0 10px 0;
 
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  background-color: black;
+  z-index: 10;
 }
 
-#navtab {
+#navtab_mini {
   position: relative;
   margin: auto;
 
@@ -19,7 +21,7 @@
   align-items: center;
 }
 
-#navtab_search_field {
+#navtab_mini_search_field {
   position: relative;
   margin: 0px;
   
@@ -32,13 +34,13 @@
   outline: none;
 }
 
-#navtab form {
+#navtab_mini form {
   display: flex;
   align-items: center;
   width: 100px;
 }
 
-#navtab form img {
+#navtab_mini form img {
   position: relative;
   margin-left: -15px;
 
@@ -49,7 +51,7 @@
   object-fit: cover;
 }
 
-.navtab_option {
+.navtab_mini_option {
   position: relative;
   margin: 10px;
 
@@ -61,7 +63,7 @@
   max-width: 150px;
 }
 
-.navtab_icon {
+.navtab_mini_icon {
   position: relative;
   display: flex;
   width: 15px;
@@ -70,7 +72,7 @@
   margin-right: 5px;
 }
 
-#navtab a {
+#navtab_mini a {
   text-decoration: none;
   color: white
 }

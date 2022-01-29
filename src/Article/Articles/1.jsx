@@ -15,7 +15,7 @@ const content = {
       <p>#NoToPAREX</p>
       <p>#IlogPasiglahin</p>
 
-      <p>SIGN THE PETITION! http://bit.ly/NoToPAREX</p>
+      <p>SIGN THE PETITION! <a href="http://bit.ly/NoToPAREX">http://bit.ly/NoToPAREX</a></p>
 
       <p>References:</p>
       <ol>

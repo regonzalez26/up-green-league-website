@@ -83,7 +83,6 @@
   display: block;
   width: 100%;
 
-  text-justify:distribute;
   line-height: 150%;
   text-align: left;
   font-size: medium;
@@ -91,6 +90,11 @@
 
 #article_content p {
   margin-bottom: 10px;
+  text-align: justify;
+}
+
+#article_content a{
+  word-wrap: break-word;
 }
 
 .indent {

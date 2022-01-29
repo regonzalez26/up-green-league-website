@@ -4,6 +4,29 @@ import './Article.css'
 
 class Article extends React.Component {
   article_content = require('./Articles/1.jsx').default
+  full_width_on_window_width = 700
+
+  reset_article_width = () => {
+    if(window.innerWidth > this.full_width_on_window_width){
+      document.getElementById('article_container').style.width = "60%"
+      document.getElementById('right_side_bar_container').style.display = 'flex'
+    } else {
+      document.getElementById('article_container').style.width = "100%"
+      document.getElementById('right_side_bar_container').style.display = 'none'
+    }
+  }
+
+  componentDidMount = () => {
+    if (window.innerWidth < this.full_width_on_window_width) {
+      document.getElementById('article_container').width = "100%"
+    }
+
+    window.addEventListener('resize', this.reset_article_width)
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.reset_article_width)
+  }
 
   render() {
     return(
