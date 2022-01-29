@@ -15,7 +15,7 @@ function Navtab(){
       <div id="navtab">
         <form>
         <input type="search" id="navtab_search_field"/>
-        <button type="submit" hidden="true">
+        <button type="submit" hidden={true}>
         </button>
         <img src={SearchBarIcon} alt="search bar icon"/>
         </form>
