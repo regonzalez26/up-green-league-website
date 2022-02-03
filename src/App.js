@@ -9,6 +9,7 @@ import Article from './Article/Article.js'
 
 import ArticleFeatureBar from './ArticleFeatureBar/ArticleFeatureBar.js'
 import RightSideBar from './RightSideBar/RightSideBar.js';
+import ConnectWithUs from './ConnectWithUs/ConnectWithUs.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -48,6 +49,11 @@ class App extends React.Component {
               
               <Route exact path="/Home" component={ArticleFeatureBar}>
                 <ArticleFeatureBar />
+                <RightSideBar />
+              </Route>
+
+              <Route exact path="/Connect-With-Us" component={ConnectWithUs}>
+                <ConnectWithUs />
                 <RightSideBar />
               </Route>
   
