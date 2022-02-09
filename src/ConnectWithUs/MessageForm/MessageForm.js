@@ -48,7 +48,8 @@ class MessageForm extends React.Component {
                 <td className="message_form_input"><textarea type="text" name="Message" rows="10" wrap="hard"></textarea></td>
               </tr>
               <tr>
-                <td className="message_form_submit"><input type="submit" value="Send"/></td>
+                <td></td>
+                <td className="message_form_submit"><input type="submit" value="Send" id="submit_button"/></td>
               </tr>
             </tbody>
           </table>

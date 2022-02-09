@@ -7,8 +7,12 @@ import './App.css'
 
 import Article from './Article/Article.js'
 
-import ArticleFeatureBar from './ArticleFeatureBar/ArticleFeatureBar.js'
-import RightSideBar from './RightSideBar/RightSideBar.js';
+import MainScrollContainer from './Widgets/WidgetContainers/MainScrollContainer/MainScrollContainer.js';
+import SideBarContainer from './Widgets/WidgetContainers/SidebarContainer/SideBarContainer.js';
+
+import ArticleFeatureBar from './Widgets/WidgetBars/ArticleFeatureBar/ArticleFeatureBar.js';
+import SocialMediaBar from './Widgets/WidgetBars/SocialMediaPlugins/SocialMediaBar.js';
+
 import ConnectWithUs from './ConnectWithUs/ConnectWithUs.js';
 
 class App extends React.Component {
@@ -47,14 +51,20 @@ class App extends React.Component {
             <Redirect from="/" to="/Home" />
             <Switch>
               
-              <Route exact path="/Home" component={ArticleFeatureBar}>
-                <ArticleFeatureBar />
-                <RightSideBar />
+              <Route exact path="/Home" component={MainScrollContainer}>
+                <MainScrollContainer content={
+                  <ArticleFeatureBar />
+                  }/>
+                <SideBarContainer content={<SocialMediaBar />}/>
+                {/* <ArticleFeatureBar /> */}
+                {/* <RightSideBar /> */}
               </Route>
 
               <Route exact path="/Connect-With-Us" component={ConnectWithUs}>
-                <ConnectWithUs />
-                <RightSideBar />
+                <MainScrollContainer content={
+                  <ConnectWithUs />
+                }/>
+                <SideBarContainer content={<ArticleFeatureBar />} />
               </Route>
   
               <Route exact path="/Releases">
@@ -62,7 +72,7 @@ class App extends React.Component {
   
               <Route exact path="/1" component={Article}>
                 <Article id={1} />
-                <RightSideBar />
+                {/* <RightSideBar /> */}
               </Route>
             </Switch>
             

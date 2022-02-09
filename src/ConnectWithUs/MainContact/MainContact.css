@@ -34,7 +34,7 @@
   height: 100%;
   width: 100%;
 
-  background-color: black;
+  background-size: cover;
 }
 
 #main_contact_info {

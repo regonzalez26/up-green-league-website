@@ -1,6 +1,5 @@
 #article_card {
   position: relative;
-  margin-bottom: 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -48,9 +47,24 @@
   font-weight: bold;
 }
 
+#article_card_description_container {
+  position: relative;
+  height: 0px;
+  width: 100%;
+  padding-bottom: 50%;
+}
+
 #article_card_description {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
   text-align: justify;
   font-size: 12px;
+
+  overflow: hidden;
 }
 
 #article_card_btn_read_more {

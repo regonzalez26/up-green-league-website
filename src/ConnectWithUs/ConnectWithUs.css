@@ -1,8 +1,6 @@
 #connect_with_us_container {
   position: relative;
-  margin-top: 50px;
 
-  display: flex;
-  flex-wrap: wrap;
-  width: 60%;
+  display: block;
+  width: 100%;
 }

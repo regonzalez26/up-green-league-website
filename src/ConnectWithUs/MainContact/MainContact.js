@@ -4,6 +4,8 @@ import './MainContact.css'
 import EmailYellowIcon from './img/email_yellow_icon.png'
 
 class MainContact extends React.Component {
+  contact_image_link = "https://64.media.tumblr.com/031ac6dc8d903babc85fcbf5be37fa80/fb135008d3a6287b-70/s1280x1920/770500c00f7541cf6667fa6bcc710e3bac9c909b.jpg"
+
   render(){
     return (
       <div id="main_contact_container">
@@ -11,7 +13,7 @@ class MainContact extends React.Component {
           <span className="small_text">You may also reach us through</span>
           <div id="main_contact_card">
             <div id="main_contact_img_container">
-              <div id="main_contact_img" />
+              <div id="main_contact_img" style={{backgroundImage: `url(${this.contact_image_link})`}}/>
             </div>
             <div id="main_contact_info">
               <p id="main_contact_position">VICE PRESIDENT FOR EXTERNAL AFFAIRS</p>
@@ -35,8 +37,8 @@ class MainContact extends React.Component {
               </div>
               <div className="icon_link">
                 <img className="icon" src={EmailYellowIcon} alt="phone icon" />
-                <a href="#">
-                  (+63) 9xx xxx xxxx
+                <a href="tel:09266764518">
+                  (+63) 926 676 4518
                 </a>
               </div>
             </div>
