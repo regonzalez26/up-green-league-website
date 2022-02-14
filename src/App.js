@@ -48,9 +48,10 @@ class App extends React.Component {
           <Header />
           {this.state.nav_tab_mini}
           <div id="content_placeholder">
-            {/* <Redirect from="/" to="/Home" /> */}
             <Switch>
-              
+              <Route exact path="/">
+                  <Redirect to="/Home" />
+              </Route>
               <Route exact path="/Home" component={MainScrollContainer}>
                 <MainScrollContainer content={
                   <ArticleFeatureBar />
