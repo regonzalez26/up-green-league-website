@@ -21,7 +21,7 @@ function NavtabMini(){
         </form>
         <div className="navtab_mini_option"><Link to="/Home">HOME</Link></div>
         <div className="navtab_mini_option"><Link to="/About">ABOUT OUR MOVEMENT</Link></div>
-        <div className="navtab_mini_option"><Link to="/Us">CONNECT WITH US</Link></div>
+        <div className="navtab_mini_option"><Link to="/Connect-With-Us">CONNECT WITH US</Link></div>
         <div className="navtab_mini_option"><Link to="/Releases">RELEASES</Link></div>
         <a href='https://www.facebook.com/upgreenleague'><img className="navtab_mini_icon" src={FacebookWhiteIcon} alt="facebook"/></a>
         <a href='https://www.instagram.com/upgreenleague/'><img className="navtab_mini_icon" src={InstagramWhiteIcon} alt="instagram"/></a>

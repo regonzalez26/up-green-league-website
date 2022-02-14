@@ -10,9 +10,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   width: 80%;
 
   min-height: 500px;
+}
+
+a:hover {
+  color: #0C6F0C;
+  font-weight: bold;
 }
 
 @font-face {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Article.css'
 
 class Article extends React.Component {
-  article_content = require('./Articles/1.jsx').default
+  article_content = require(`./Articles/${this.props.id}.jsx`).default
   full_width_on_window_width = 700
 
   reset_article_width = () => {

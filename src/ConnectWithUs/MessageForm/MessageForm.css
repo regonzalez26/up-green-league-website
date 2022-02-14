@@ -1,0 +1,63 @@
+#message_form_container {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+#message_form_container form {
+  position: relative;
+
+  display: block;
+  padding: 20px 50px 20px 50px;
+  margin: 0;
+}
+
+#message_form_container table {
+  position: relative;
+  width: 100%;
+}
+
+.message_form_label {
+  width: 20%;
+  text-align: left;
+  font-size: small;
+  font-weight: bold;
+}
+
+.message_form_input {
+  width: 60%;
+  padding-right: 10%;
+}
+
+#message_form_container input, #message_form_container textarea{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid gray;
+}
+
+#message_form_container textarea {
+  resize: none;
+  overflow: scroll;
+  font-family: "Rubik";
+}
+
+#message_form_container td{
+  padding: 5px 0 5px 0;
+  vertical-align: top;
+}
+
+#submit_button {
+  display: block;
+  background-color: white;
+}
+
+#submit_button:hover {
+  color: white;
+  background-color: #0C6F0C;
+  cursor: pointer;
+}
