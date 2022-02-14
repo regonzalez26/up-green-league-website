@@ -4,7 +4,7 @@ const content = {
   'author' : 'UPGL Educ Committee',
   'publish_date' : 'Nov 16 2021',
   'short_description': 'The Pasig River Expressway (PAREX) is a planned 19.37 km six-lane elevated expressway proposed by the San Miguel Corporation (SMC) that would extend along and on top of the Pasig River, connecting the Radial Road 10 in Manila to the C-6 Road in Taguig. According to the SMC, the proposed expressway would decrease traffic congestion and travel time within Metro Manila, as well...',
-  'image_link': 'https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/257838622_4834340279964634_969219236406324895_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=HWUYexrMrqgAX8_JzS3&tn=kNAg89VaPISGBCIO&_nc_ht=scontent-hkt1-2.xx&oh=00_AT_JbH5mlLRb_W23mLSXYhtEizvQpxNqA70FsIj7qyZWHQ&oe=61FA3406',
+  'image_link': 'https://64.media.tumblr.com/5b4916da60b5888f1bade6b8de1eec2a/c4e1936a3117072e-c2/s1280x1920/98e168f90bf75a2f688dc668b96301bd6c30d019.png',
   'content': (
     <div id="article_content">
       <p><span className="indent"></span>The Pasig River Expressway (PAREX) is a planned 19.37 km six-lane elevated expressway proposed by the San Miguel Corporation (SMC) that would extend along and on top of the Pasig River, connecting the Radial Road 10 in Manila to the C-6 Road in Taguig. According to the SMC, the proposed expressway would decrease traffic congestion and travel time within Metro Manila, as well as clean up the Pasig River. However, concerns have been raised that the project would ultimately do more harm than good [1].</p>

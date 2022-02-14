@@ -48,16 +48,14 @@ class App extends React.Component {
           <Header />
           {this.state.nav_tab_mini}
           <div id="content_placeholder">
-            <Redirect from="/" to="/Home" />
+            {/* <Redirect from="/" to="/Home" /> */}
             <Switch>
               
               <Route exact path="/Home" component={MainScrollContainer}>
                 <MainScrollContainer content={
                   <ArticleFeatureBar />
                   }/>
-                <SideBarContainer content={<SocialMediaBar />}/>
-                {/* <ArticleFeatureBar /> */}
-                {/* <RightSideBar /> */}
+                <SideBarContainer content={<SocialMediaBar vertical={true}/>}/>
               </Route>
 
               <Route exact path="/Connect-With-Us" component={ConnectWithUs}>
@@ -72,7 +70,9 @@ class App extends React.Component {
   
               <Route exact path="/1" component={Article}>
                 <Article id={1} />
-                {/* <RightSideBar /> */}
+              </Route>
+              <Route exact path="/2" component={Article}>
+                <Article id={2} />
               </Route>
             </Switch>
             

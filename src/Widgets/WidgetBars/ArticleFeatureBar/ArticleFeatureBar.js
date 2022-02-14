@@ -4,7 +4,7 @@ import './ArticleFeatureBar.css'
 import ArticleCard from './ArticleCard/ArticleCard.js'
 
 class ArticleFeatureBar extends React.Component {
-  featured_article_ids = [1, 1, 1]
+  featured_article_ids = [1, 2]
   full_card_width_on_container_width = 300
 
   // reset_article_card_width = () => {
