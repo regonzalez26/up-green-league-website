@@ -3,7 +3,7 @@ const content = {
   'title': 'Dumagat-Remontados Situationer',
   'author' : 'UPGL Educ Committee',
   'publish_date' : 'Feb 11 2021',
-  'short_description': 'The Pasig River Expressway (PAREX) is a planned 19.37 km six-lane elevated expressway proposed by the San Miguel Corporation (SMC) that would extend along and on top of the Pasig River, connecting the Radial Road 10 in Manila to the C-6 Road in Taguig. According to the SMC, the proposed expressway would decrease traffic congestion and travel time within Metro Manila, as well...',
+  'short_description': 'The construction of Kaliwa Dam has been proposed as a solution to Metro Manila’s water security crisis but it easily became a major threat to the biodiversity of the construction site',
   'image_link': 'https://64.media.tumblr.com/eea9545e4336bfae12f97093b1d06de1/c4e1936a3117072e-ec/s1280x1920/56e8e2a5a3701772674c98861b0640c3787a8546.png',
   'content': (
     <div id="article_content">
