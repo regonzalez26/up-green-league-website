@@ -12,53 +12,61 @@ const images = [S1,S2,S3,S4,S5,S6]
 
 const delay = 8000;
 
-function Slideshow(){
-  const [index, setIndex] = React.useState(0);
+class Slideshow extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      index: 0
+    }
+  }
 
-  React.useEffect(() => {
-    setTimeout(
+  componentDidMount = () => {
+    setInterval(
       () => {
-        setIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        this.setState({
+          index: (this.state.index + 1)%(images.length)}
         )
       },
       delay
     );
 
-    return () => {};
-  }, [index]);
+    document.getElementById('header_slideshow_overlay').style.height = `${window.innerHeight}px`
+    document.getElementById('header_slideshow').style.height = `${window.innerHeight}px`
+  }
 
-  return(
-    <div id="header_slideshow_container">
-      <div id="header_slideshow">
-        <div
-          id="header_slideshow_slider"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-        >
-          {
-            images.map((image, index) => (
-             <div
-              id="header_slideshow_slide"
-              key={index}
-              style={{ backgroundImage: `url(${image})` }}  
-            /> 
-            ))
-          }
+  render = () => {
+    return(
+      <div id="header_slideshow_container">
+        <div id="header_slideshow">
+          <div
+            id="header_slideshow_slider"
+            style={{ transform: `translate3d(${-this.state.index * 100}%, 0, 0)` }}
+          >
+            {
+              images.map((image, index) => (
+              <div
+                id="header_slideshow_slide"
+                key={index}
+                style={{ backgroundImage: `url(${image})` }}  
+              /> 
+              ))
+            }
+          </div>
         </div>
-      </div>
 
-      <div id="header_slideshow_dots">
-          {images.map((_,idx) => (
-            <div
-              className={`header_slideshow_dot ${index === idx ? "header_slideshow_active_dot" : ""}`}
-              key={idx}
-            ></div>
-          ))}
-      </div>
+        <div id="header_slideshow_dots">
+            {images.map((_,idx) => (
+              <div
+                className={`header_slideshow_dot ${this.state.index === idx ? "header_slideshow_active_dot" : ""}`}
+                key={idx}
+              ></div>
+            ))}
+        </div>
 
-      <div id="header_slideshow_overlay"/>
-    </div>
-  )
+        <div id="header_slideshow_overlay"/>
+      </div>
+    )
+  }
 }
 
 export default Slideshow
