@@ -24,25 +24,31 @@ class App extends React.Component {
 
   show_nav_tab = ()=>{
     var navtab_bottom = document.getElementById('navtab_container')?.getBoundingClientRect().bottom;
+    
     if (navtab_bottom < 10){
       if (this.state.nav_tab_mini === ""){
         this.setState({nav_tab_mini: <NavtabMini />})
+        window.scrollTo(
+          { top: document.getElementById('header').getBoundingClientRect().height - document.getElementById('navtab_mini').getBoundingClientRect().height
+          ,behavior: 'smooth' }
+        )
       }
     } else {
-      this.setState({nav_tab_mini: ""})
+        this.setState({nav_tab_mini: ""})
     }
   };
 
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.show_nav_tab)
+    document.getElementById('content_placeholder').style.minHeight = `${window.innerHeight}px`
   }
 
   componentWillUnmount = () => {
     window.removeEventListener('scroll', this.show_nav_tab)
   }
 
-  render () {
+  render  = () => {
     return (
       <BrowserRouter>
         <div className="App">
@@ -83,6 +89,9 @@ class App extends React.Component {
                 <SideBarContainer content={<ArticleFeatureBar />} />
               </Route>
             </Switch>
+
+            {/* <a class="twitter-timeline" href="https://twitter.com/UPGreenLeague?ref_src=twsrc%5Etfw">Tweets by UPGreenLeague</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
             
           </div>
           <Footer />

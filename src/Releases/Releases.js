@@ -1,7 +1,6 @@
 import React from 'react'
 import './Releases.css'
 import ReleaseItem from './ReleaseItem/ReleaseItem.js'
-import { release } from 'os'
 
 class Releases extends React.Component {
   release_ids = [1,2]
