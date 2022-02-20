@@ -1,4 +1,5 @@
 const content = {
+  'id' : 2,
   'type' : 'Statement',
   'title': 'Dumagat-Remontados Situationer',
   'author' : 'UPGL Educ Committee',

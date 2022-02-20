@@ -1,0 +1,48 @@
+#release_item_container {
+  position: relative;
+  margin-bottom: 10px;
+
+  display: flex;
+  width: 100%;
+  
+  align-items: center;
+}
+
+#release_item_image {
+  display: inline-block;
+  height: 100px;
+  min-width: 100px;
+  width: 100px;
+  
+  background-size: contain;
+  background-color: black;
+}
+
+#release_item_content {
+  display: inline-block;
+}
+
+#release_item_type {
+  color: gray;
+  font-size: small;
+  text-align: left;
+}
+
+#release_item_title {
+  font-size: large;
+  font-weight: bold;
+  text-align: left;
+}
+
+#release_item_description {
+  display: block;
+  max-height: 30px;
+  overflow: hidden;
+
+  text-align: justify;
+  font-size: 12px;
+}
+
+.release_item_content_element {
+  margin-left: 10px;
+}

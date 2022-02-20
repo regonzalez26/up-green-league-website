@@ -1,4 +1,5 @@
 const content = {
+  'id' : 1,
   'type' : 'Statement',
   'title': '#NoToParex',
   'author' : 'UPGL Educ Committee',

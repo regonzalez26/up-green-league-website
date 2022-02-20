@@ -16,6 +16,10 @@
   min-height: 500px;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: #0C6F0C;
   font-weight: bold;

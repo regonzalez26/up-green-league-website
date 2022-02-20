@@ -14,6 +14,7 @@ import ArticleFeatureBar from './Widgets/WidgetBars/ArticleFeatureBar/ArticleFea
 import SocialMediaBar from './Widgets/WidgetBars/SocialMediaPlugins/SocialMediaBar.js';
 
 import ConnectWithUs from './ConnectWithUs/ConnectWithUs.js';
+import Releases from './Releases/Releases.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -67,6 +68,10 @@ class App extends React.Component {
               </Route>
   
               <Route exact path="/Releases">
+                <MainScrollContainer content={
+                  <Releases />
+                }/>
+                <SideBarContainer content={<SocialMediaBar vertical={true}/>} />
               </Route>
   
               <Route exact path="/1" component={Article}>
