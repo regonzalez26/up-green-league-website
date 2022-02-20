@@ -71,9 +71,11 @@ class App extends React.Component {
   
               <Route exact path="/1" component={Article}>
                 <Article id={1} />
+                <SideBarContainer content={<ArticleFeatureBar />} />
               </Route>
               <Route exact path="/2" component={Article}>
                 <Article id={2} />
+                <SideBarContainer content={<ArticleFeatureBar />} />
               </Route>
             </Switch>
             
