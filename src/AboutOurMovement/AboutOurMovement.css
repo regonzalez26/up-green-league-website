@@ -1,0 +1,10 @@
+#about_our_movement_container {
+  position: relative;
+
+  display: block;
+  width: 100%;
+}
+
+#Title {
+  font-size: x-large;
+}

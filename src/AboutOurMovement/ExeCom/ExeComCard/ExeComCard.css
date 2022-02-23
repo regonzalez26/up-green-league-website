@@ -1,0 +1,22 @@
+.execomcard_container {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.execomcard_block {
+  display: block;
+}
+
+.execom_img_container {
+  width: 100%;
+  margin-bottom: 7px;
+}
+.execom_img {
+  width: 100%;
+}
+
+.pos {
+  font-size: small;
+  font-weight: bold;
+}
