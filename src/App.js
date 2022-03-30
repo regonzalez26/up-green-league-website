@@ -87,12 +87,12 @@ class App extends React.Component {
 
               <Route exact path="/1" component={Article}>
                 <Article id={1} key={Math.random()}/>
-                <SideBarContainer content={<ArticleFeatureBar featured_article_ids={[2]} />} />
+                <SideBarContainer content={<ArticleFeatureBar featured_article_ids={[2]} key={Math.random()}/>} />
               </Route>
 
               <Route exact path="/2" component={Article}>
                 <Article id={2} key={Math.random()}/>
-                <SideBarContainer content={<ArticleFeatureBar featured_article_ids={[1]}/>} />
+                <SideBarContainer content={<ArticleFeatureBar featured_article_ids={[1]} key={Math.random()}/>} />
               </Route>
 
               <Route exact path="/About" component={AboutOurMovement}>
