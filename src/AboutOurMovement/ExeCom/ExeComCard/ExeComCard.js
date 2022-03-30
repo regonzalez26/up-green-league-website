@@ -13,7 +13,7 @@ class ExeComImg extends React.Component {
       <div className="execomcard_container">
         <div className="execomcard_block">
           <div className="execom_img_container">
-            <img className="execom_img" src={this.state.img} />
+            <img className="execom_img" src={this.state.img} alt="Members of the execom"/>
           </div>
           <div className="pos"> {this.state.pos}</div>
           <div className="name">{this.state.name}</div>

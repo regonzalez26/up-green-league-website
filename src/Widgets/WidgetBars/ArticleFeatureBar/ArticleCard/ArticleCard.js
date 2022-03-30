@@ -19,7 +19,7 @@ class ArticleCard extends React.Component {
           <div className="article_card_element" id="article_card_description">{this.article.short_description}</div>
         </div>
         <div className="article_card_element" id="article_card_options">
-          <Link to={`/${this.props.id}`} ><button id="article_card_btn_read_more">Read more</button></Link>
+          <Link to={`/${this.props.id}`}><button id="article_card_btn_read_more">Read more</button></Link>
         </div>
       </div>
     );

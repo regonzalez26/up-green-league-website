@@ -67,7 +67,7 @@ class App extends React.Component {
                 <Redirect to="/Home" />
               </Route>
               <Route exact path="/Home" component={MainScrollContainer}>
-                <MainScrollContainer content={<ArticleFeatureBar />} />
+                <MainScrollContainer content={<ArticleFeatureBar featured_article_ids = {[1,2]} />} />
                 <SideBarContainer
                   content={<SocialMediaBar vertical={true} />}
                 />
@@ -75,7 +75,7 @@ class App extends React.Component {
 
               <Route exact path="/Connect-With-Us" component={ConnectWithUs}>
                 <MainScrollContainer content={<ConnectWithUs />} />
-                <SideBarContainer content={<ArticleFeatureBar />} />
+                <SideBarContainer content={<ArticleFeatureBar featured_article_ids ={[1,2]} />} />
               </Route>
 
               <Route exact path="/Releases">
@@ -86,12 +86,13 @@ class App extends React.Component {
               </Route>
 
               <Route exact path="/1" component={Article}>
-                <Article id={1} />
-                <SideBarContainer content={<ArticleFeatureBar />} />
+                <Article id={1} key={Math.random()}/>
+                <SideBarContainer content={<ArticleFeatureBar featured_article_ids={[2]} />} />
               </Route>
+
               <Route exact path="/2" component={Article}>
-                <Article id={2} />
-                <SideBarContainer content={<ArticleFeatureBar />} />
+                <Article id={2} key={Math.random()}/>
+                <SideBarContainer content={<ArticleFeatureBar featured_article_ids={[1]}/>} />
               </Route>
 
               <Route exact path="/About" component={AboutOurMovement}>
