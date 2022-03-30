@@ -6,6 +6,7 @@ const content = {
   'publish_date' : 'Feb 11 2021',
   'short_description': 'The construction of Kaliwa Dam has been proposed as a solution to Metro Manila’s water security crisis but it easily became a major threat to the biodiversity of the construction site',
   'image_link': 'https://64.media.tumblr.com/eea9545e4336bfae12f97093b1d06de1/c4e1936a3117072e-ec/s1280x1920/56e8e2a5a3701772674c98861b0640c3787a8546.png',
+  'header_image_link': 'https://64.media.tumblr.com/deb713ec3d8ea8030dab95503301655b/0c3d90cc41ba0261-c4/s1280x1920/6a7a00f6c5e9423b0af2903bf9a4dd144f591a5d.jpg',
   'content': (
     <div id="article_content">
       <p><span className="indent"></span>The construction of Kaliwa Dam has been proposed as a solution to Metro Manila’s water security crisis but it easily became a major threat to the biodiversity of the construction site, especially to the ancestral domains of more than 300 Dumagat-Remontados indigenous people who will need to relocate due to the said project [1].</p>
